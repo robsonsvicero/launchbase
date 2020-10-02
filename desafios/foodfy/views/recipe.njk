@@ -1,0 +1,54 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+<title>Foodfy | {{item.title}}</title>
+{% endblock %}
+
+ {% block content%}
+<section class="recipe-wrapper">
+    <img src="{{item.image}}" alt="Imagem de {{item.title}}">
+    <h3>{{item.title}}</h3>
+    <p class="author">por {{item.author}}</p>
+
+    <div class="ingredients">
+        <div class="ingredients__title">
+            <h2>Ingredientes</h2>
+            <a class="button">ESCONDER</a>
+        </div>
+
+        <div class="recipe__list">
+            <ul class="content show" >
+            {% for ingredient in item.ingredients %}
+                <li>{{ingredient}}</li>
+            {% endfor%}
+            </ul>
+        </div>
+    </div>
+
+    <div class="preparation">
+        <div class="preparation__title">
+            <h2>Modo de Preparo</h2>
+            <a class="button">ESCONDER</a>
+        </div>
+        
+        <div class="recipe__list">            
+          <ul class="content show">
+          {% for prep in item.preparation %}
+            <li>{{prep}}</li>
+          {% endfor%}
+          </ul>
+        </div>
+    </div>
+
+    <div class="information">
+        <div class="info__title">
+            <h2>Informações adicionais</h2>
+            <a class="button">ESCONDER</a>
+        </div>
+    
+        <p class="content show">{{item.information}}</p>
+    </div>
+
+</section>
+  <script src="/scripts.js"></script>
+{% endblock %}

@@ -1,0 +1,301 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900family=Source+Sans+Pro:wght@400;700&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+header {
+  font-family: 'Roboto', sans-serif;
+  padding: 36.1px 231px;
+}
+
+.header-menu {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: 100%;
+}
+
+.links-header {
+  margin-left: 92.4px;
+}
+
+.links-header a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #111111;
+}
+
+#receitas {
+  font-family: 'Roboto', sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  max-width: 940px;
+  max-height: 366px;
+  background-color: #FBDFDB;
+  border-radius: 30px;
+  margin: 36px 17%;
+  width: 940px;
+  height: 366px;
+}
+
+.title-receitas {
+  width: 316px;
+  margin-top: 117px;
+  margin-left: 60px;
+}
+
+.title-receitas h1 {
+  color: #111111;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title-receitas p {
+  color: #000000;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.img-receitas {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+
+/*=== CARDS ===*/
+
+.cards__title {
+  margin: 50px 17%;
+}
+
+.cards__title h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 28px;
+  color: #111111;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 940px;
+  margin: 20px 17%;
+}
+
+.card__image {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+}
+
+.card__image img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card__title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.card__title h3 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #111111;
+}
+
+.card__title p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #777777;
+}
+
+
+/*=== FOOTER ===*/
+
+footer {
+  background: #EEEEEE;
+  text-align: center;
+}
+
+#footer {
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+  padding: 23px 0;
+}
+
+
+/* RECEITAS */
+
+
+/*=== MODAL ===*/
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close-modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+
+/*=== MODAL.ACTIVE ===*/
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 84%;
+  position: absolute;
+  top: 8%;
+}
+
+
+/* SOBRE */
+
+.sobre-foodfy {
+  margin: 36px 230px;
+}
+
+.sobre-foodfy h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: #111111;
+}
+
+.sobre-foodfy p {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: justify;
+  color: #444444;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.sobre-foodfy h2 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #111111;
+}
+
+
+/*=== RECIPE ===*/
+
+.recipe-wrapper {
+  margin: 50px 231px;
+  min-width: 940px;
+}
+
+.recipe-wrapper img {
+  max-width: 940px;
+  max-height: 280px;
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.recipe-wrapper h3 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 42px;
+  color: #111111;
+}
+
+.recipe-wrapper .author {
+  margin: 4px auto 0;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  color: #777777;
+  font-weight: 300;
+}
+
+.ingredients__title,
+.preparation__title,
+.info__title {
+  display: flex;
+  align-items: baseline;
+  margin-top: 50px;
+}
+
+.ingredients__title h2,
+.preparation__title h2,
+.info__title h2 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: bold;
+  text-align: left;
+  margin-right: 8px;
+}
+
+.ingredients__title a.button,
+.preparation__title a.button,
+.info__title a.button {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #999999;
+}
+
+.ingredients__title a.button:hover,
+.preparation__title a.button:hover,
+.info__title a.button:hover {
+  cursor: pointer;
+}
+
+.recipe__list,
+.content {
+  margin-top: 20px;
+}
+
+.content.show li,
+.content.show {
+  font-size: 18px;
+  line-height: 28px;
+  color: #444444;
+}
+
+
+/*=== ACTIVE/DESATIVE ===*/
+
+.content.show {
+  padding-bottom: 5%;
+  display: block;
+  list-style-position: inside;
+}
+
+.content.hide {
+  max-width: 940px;
+  display: none;
+  overflow: hidden;
+}

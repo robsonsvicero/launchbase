@@ -1,0 +1,31 @@
+{% extends "layout.njk" %} {% block head %}
+<title>Desafio 3.1 | Conteúdo</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> {% endblock %} {% block content %}
+<h1 class="title">Conteúdos</h1>
+
+<div id="cards">
+
+
+  <div class="card" id="{{item.id}}">
+    <div class="card__image-container">
+      <iframe src="https://blog.rocketseat.com.br/{{item.id}}" frameborder="0"></iframe>
+          </div>
+    <div class="card__content">
+      <p>{{item.title}}</p>
+    </div>
+    <div class="card__info">
+      <p>por {{item.author}}</p>
+      <p>{{item.time}}</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div id="links-footer" class="links">
+    <a href="https://github.com/Rocketseat" target="_blank">Github</a>
+    <a href="https://www.instagram.com/rocketseat_oficial/" target="_blank">Instagram</a>
+    <a href="https://www.facebook.com/rocketseat" target="_blank">Facebook</a>
+  </div>
+</footer>
+{% endblock %}
