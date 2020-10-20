@@ -128,7 +128,7 @@ header {
 }
 
 .details .item span,
-tbody tr td.service {
+.table-container .item span {
   padding: 8px 16px;
   background-color: var(--secondary-color);
   border-radius: 16px;
@@ -139,6 +139,10 @@ tbody tr td.service {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;
+}
+
+.table-container .item span {
+  font-size: 11px;
 }
 
 
@@ -208,6 +212,12 @@ th {
   border-bottom: 1px solid #d9d9d9;
 }
 
+td {
+  text-transform: uppercase;
+  color: #777777;
+  font-size: 12px;
+}
+
 th {
   text-transform: uppercase;
   color: #777777;
@@ -225,8 +235,8 @@ tbody tr td:first-child {
 }
 
 tbody tr td:first-child span {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-position: center;
   background-size: cover;
   border-radius: 50%;

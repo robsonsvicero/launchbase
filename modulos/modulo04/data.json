@@ -6,25 +6,37 @@
       "name": "ROBSON SVICERO",
       "birth": 221702400000,
       "gender": "M",
-      "services": "Musculação, crossfit, natação",
+      "services": [
+        "Musculação",
+        " crossfit",
+        " natação"
+      ],
       "created_at": 1602030237844
     },
     {
       "id": 3,
-      "avatar_url": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "avatar_url": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "Diego Fernandes",
       "birth": 844560000000,
       "gender": "M",
-      "services": "Musculação, crossfit, natação",
+      "services": [
+        "Musculação",
+        " crossfit",
+        " natação"
+      ],
       "created_at": 1602031412010
     },
     {
       "id": 4,
-      "avatar_url": "https://images.unsplash.com/photo-1470468969717-61d5d54fd036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
       "name": "SANDRA G SPINOLA",
       "birth": 325728000000,
       "gender": "F",
-      "services": "Yoga, pilates, tai-chi",
+      "services": [
+        "Yoga",
+        " pilates",
+        " tai-chi"
+      ],
       "created_at": 1602035162595
     }
   ]

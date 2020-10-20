@@ -141,6 +141,10 @@ header {
   font-size: 12px;
 }
 
+.table-container .item span {
+  font-size: 11px;
+}
+
 
 /*=== FORM ===*/
 

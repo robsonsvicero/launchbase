@@ -23,7 +23,6 @@ exports.show = function(req, res) {
     ...foundTeacher,
     age: age(foundTeacher.birth),
     schooling: graduation(foundTeacher.schooling),
-    // services: foundTeacher.services.split(','),
     created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at),
   }
 
@@ -76,8 +75,7 @@ exports.edit = function(req, res) {
   if (!foundTeacher) return res.send("Teacher not found!")
   const teacher = {
     ...foundTeacher,
-    birth: date(foundTeacher.birth),
-    // services: foundTeacher.services.split(",")
+    birth: date(foundTeacher.birth)
   }
   return res.render('teachers/edit', { teacher })
 }
