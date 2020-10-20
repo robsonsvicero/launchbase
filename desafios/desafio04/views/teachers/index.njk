@@ -5,8 +5,8 @@
   <table width="100%">
     <thead>
       <tr>
-        <th>Professor</th>
-        <th>Atendimento</th>
+        <th>Nome completo</th>
+        <th>Acompanhamento</th>
         <th>Ação</th>
       </tr>
     </thead>
@@ -17,9 +17,13 @@
           <span style="background-image: url({{teacher.avatar_url}})"></span>
           {{teacher.name}}
         </td>
-        {% for service in teacher.services %}
-        <td class="service"><span></span>{{service}}</td>
+     
+        <td class="item">
+          {% for service in teacher.services %}
+          <span>{{ service }}</span>
         {% endfor %}
+          </td>
+        
         <td><a href="/teachers/{{teacher.id}}">ver</a></td>
       </tr>
 

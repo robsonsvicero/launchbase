@@ -128,14 +128,14 @@ header {
 }
 
 .details .item span,
-tbody tr td.service {
+.table-container .item span {
   padding: 8px 16px;
   background-color: var(--secondary-color);
   border-radius: 16px;
   color: #FFF8E5;
   margin-right: 4px;
   margin-top: 8px;
-  display: inline-block;
+  display: inline-flex;
   font-weight: bold;
   text-transform: uppercase;
   font-size: 12px;

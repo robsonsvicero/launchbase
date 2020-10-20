@@ -4,14 +4,10 @@ const { age, date, graduation } = require('./utils')
 const Intl = require('intl')
 
 exports.index = function(req, res) {
-  let teachers = data.teachers.map(teacher => {
-    const newTeacher = {
-      ...teacher,
-      services: teacher.services.split(',')
-    }
-    return newTeacher
-  })
+
+  return res.render('teachers/index', { teachers: data.teachers })
 }
+
 
 //SHOW
 exports.show = function(req, res) {
@@ -27,7 +23,7 @@ exports.show = function(req, res) {
     ...foundTeacher,
     age: age(foundTeacher.birth),
     schooling: graduation(foundTeacher.schooling),
-    services: foundTeacher.services.split(','),
+    // services: foundTeacher.services.split(','),
     created_at: new Intl.DateTimeFormat('pt-BR').format(foundTeacher.created_at),
   }
 
@@ -50,6 +46,7 @@ exports.post = function(req, res) {
     birth = Date.parse(birth)
     const created_at = Date.now()
     const id = Number(data.teachers.length + 1)
+    services = services.split(",")
 
     data.teachers.push({
       id,
@@ -79,7 +76,8 @@ exports.edit = function(req, res) {
   if (!foundTeacher) return res.send("Teacher not found!")
   const teacher = {
     ...foundTeacher,
-    birth: date(foundTeacher.birth)
+    birth: date(foundTeacher.birth),
+    // services: foundTeacher.services.split(",")
   }
   return res.render('teachers/edit', { teacher })
 }
@@ -102,7 +100,8 @@ exports.put = function(req, res) {
     ...foundTeacher,
     ...req.body,
     birth: Date.parse(req.body.birth),
-    id: Number(req.body.id)
+    id: Number(req.body.id),
+    services: req.body.services.split(",")
   }
   data.teachers[index] = teacher
 
