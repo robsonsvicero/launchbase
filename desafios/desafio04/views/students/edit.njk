@@ -3,13 +3,13 @@
 {% block content %}
 <div class="card">
   
-  <section class="avatar" style="background: url(https://source.unsplash.com/collection/181462/200x200) no-repeat center center / cover">
+  <section class="avatar" style="background: url({{student.avatar_url}}) no-repeat center center / cover">
   </section>
 
   <section class="details">
     <form method="POST" action="/students?_method=PUT">
 
-    <H3>Editar Professor</H3>
+    <H3>Editar Aluno</H3>
 
     {% include 'students/fields.njk' %}
 
@@ -34,6 +34,9 @@
     
     
   </form>
+
+  {% include 'students/confirm.njk' %}
+
   </section>
 
 </div>

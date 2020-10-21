@@ -1,4 +1,33 @@
 {
+  "students": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "Luiza S Svicero",
+      "email": "luiza@svicero.com",
+      "birth": 1460505600000,
+      "school_year": "5AF",
+      "hourly": "4",
+      "id": 3
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "ROBERTO ROBSON SVICERO",
+      "email": "robsonsvicero@outlook.com",
+      "birth": 946684800000,
+      "school_year": "2EM",
+      "hourly": "8",
+      "id": 1
+    },
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "name": "SANDRA GOUVEIA SPINOLA",
+      "email": "sandra@spinola.com",
+      "birth": 325728000000,
+      "school_year": "3EM",
+      "hourly": "6",
+      "id": 2
+    }
+  ],
   "teachers": [
     {
       "id": 1,
