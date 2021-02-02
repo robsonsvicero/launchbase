@@ -9,8 +9,12 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+<<<<<<< HEAD
     "intl": "^1.2.5",
     "method-override": "^3.0.0",
+=======
+    "node": "^15.0.0",
+>>>>>>> 65db4ec44e8360087c7b2256cdb6ac5867056119
     "nunjucks": "^3.2.2"
   },
   "devDependencies": {

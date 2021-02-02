@@ -7,16 +7,16 @@
   </section>
 
   <section class="details">
-    <form method="POST" action="/students?_method=PUT">
+    <form method="POST" action="/teachers?_method=PUT">
 
     <H3>Editar Professor</H3>
 
-    {% include 'students/fields.njk' %}
+    {% include 'teachers/fields.njk' %}
 
     <input 
     type="hidden"
     name="id"
-    value={{student.id}}
+    value={{teacher.id}}
     >
     <div class="btn">
           <button class="btn-save" type="submit">Salvar</button>
@@ -24,16 +24,19 @@
         </div>
 </form>
 
-  <form id="form-delete" action="/students?_method=DELETE" method="POST">
+  <form id="form-delete" action="/teachers?_method=DELETE" method="POST">
 
   <input 
     type="hidden"
     name="id"
-    value={{student.id}}
+    value={{teacher.id}}
     >
     
     
   </form>
+
+    {% include 'teachers/confirm.njk' %}
+
   </section>
 
 </div>
