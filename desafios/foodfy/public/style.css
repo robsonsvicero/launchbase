@@ -299,3 +299,15 @@ iframe {
   display: none;
   overflow: hidden;
 }
+
+/* ERROR PAGE */
+
+.error {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.error img {
+  width: 100%;
+}

@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+:root {
+  --primary-color: #157dfe;
+  --secondary-color: #fa6484;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#content {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 940px;
+}
+
+/* ==== Header ==== */
+
+.headerAdmin {
+  background-color: black;
+  padding: 40px;
+}
+
+.headerAdmin img {
+  margin-left: 11%;
+}
+
+.more_access {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/* ==== CARDS ADMIN ==== */
+
+.cardsAdmin {
+  margin: 38px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.card_img img {
+  width: 100%;
+  border-radius: 8px;
+
+  width: 940px;
+  height: 280px;
+
+  object-fit: cover;
+}
+
+.cardsAdmin .card_img img {
+  width: 172px;
+  height: 80px;
+  float: left;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.cardsAdmin p,
+h5 {
+  padding: 2px;
+}
+
+.cardsAdmin .card_img p {
+  color: #777;
+}
+
+.cardsAdmin a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cardsAdmin a:hover {
+  color: black;
+  transition: 350ms;
+}
+
+.top_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: normal;
+  margin-bottom: 20px;
+}
+
+.top_card a {
+  background-color: var(--primary-color);
+  width: 136px;
+  height: 37px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 35px;
+}
+
+.top_card a:hover {
+  opacity: 0.9;
+  transition: 350ms;
+}
+
+/* ==== RECIPE ==== */
+
+.info_recipe {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.info_recipe p {
+  font-size: 20px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.about_recipe {
+  text-align: left;
+}
+
+.about_recipe h3 {
+  margin-top: 30px;
+}
+
+.ingredients li,
+.preparation li {
+  margin-left: 16px;
+  line-height: 28px;
+  list-style: none;
+}
+
+/* ==== RECIPES ADMIN ==== */
+
+.create_recipes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create_recipes a {
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 136px;
+  height: 37px;
+  line-height: 36px;
+}
+
+.create_recipes a:hover {
+  opacity: 0.9;
+  transition: 350ms;
+}
+
+.history p {
+  margin-top: 5px;
+  margin-bottom: 80px;
+}
+
+/* ==== CREATE RECIPE ==== */
+
+.header_create {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 40px 0;
+}
+
+button[type="submit"],
+#form-delete button.btn-save {
+  padding: 8px 32px;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 4px;
+  /* margin-top: 32px; */
+  margin-left: 20px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn .btn-del {
+  background-color: var(--secondary-color);
+  padding: 8px 32px;
+  color: white;
+  border-radius: 4px;
+  /* margin-top: 32px; */
+  width: 100%;
+  font-size: 16px;
+}
+
+.form-create {
+  width: 940px;
+  margin-top: 35px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.form-create .item {
+  margin-top: 25px;
+  max-width: 940px;
+}
+
+.form-create input {
+  margin-top: 10px;
+
+  padding: 16px;
+
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.form-create textarea {
+  border: 1px solid #dddddd;
+  margin: 10px 0 35px;
+  resize: none;
+}
