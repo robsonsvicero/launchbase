@@ -1,4 +1,4 @@
-const { age, date, graduation } = require('../../lib/utils')
+const { age, date } = require('../../lib/utils')
 const db = require('../../config/db')
 // const Intl = require('intl')
 
@@ -37,10 +37,10 @@ module.exports = {
     const values = [
         req.body.avatar_url,
         req.body.name,
-        date(req.body.birth_date).iso,
-        req.body.education_level,
-        req.body.class_type,
-        req.body.subjects_taught,
+        date(req.body.birth).iso,
+        req.body.schooling,
+        req.body.classes,
+        req.body.services,
         date(Date.now()).iso
     ]
 

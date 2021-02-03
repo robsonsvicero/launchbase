@@ -130,7 +130,7 @@ header {
 .details .item span,
 .table-container .item span {
   padding: 8px 16px;
-  background-color: var(--secondary-color);
+  /* background-color: var(--secondary-color); */
   border-radius: 16px;
   color: #777777;
   margin-right: 4px;
