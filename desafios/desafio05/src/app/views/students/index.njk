@@ -9,6 +9,7 @@
         <th>Nome completo</th>
         <th>E-mail</th>
         <th>Ano escolar</th>
+        <th>Professor</th>
         <th>Ação</th>
       </tr>
     </thead>
@@ -22,6 +23,7 @@
      
         <td class="student_details"><a href="mailto:{{student.email}}">{{student.email}}</a></td>
         <td class="student_details">{{student.school_year}}</td>
+        <td class="student_details">{{student.teacher_name}}</td>
         <td><a href="/students/{{student.id}}">ver</a></td>
       </tr>
 

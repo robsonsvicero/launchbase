@@ -23,7 +23,8 @@ module.exports = {
       month,
       year,
       iso: `${year}-${month}-${day}`,
-      birthDay: `${day}/${month}`
+      birthDay: `${day}/${month}`,
+      format: `${day}/${month}/${year}`
     }
   },
 
@@ -60,31 +61,31 @@ module.exports = {
     switch (grade) {
       case "5AF":
         school_year = "5º ano do ensino fundamental";
-        return school_year;
+        break;
 
       case "6AF":
         school_year = "6º ano do ensino fundamental";
-        return school_year;
+        break;
 
       case "7AF":
         school_year = "7º ano do ensino fundamental";
-        return school_year;
+        break;
 
       case "8AF":
         school_year = "8º ano do ensino fundamental";
-        return school_year;
+        break;
 
       case "1EM":
         school_year = "1º ano do ensino médio";
-        return school_year;
+        break;
 
       case "2EM":
         school_year = "2º ano do ensino médio";
-        return school_year;
+        break;
 
       case "3EM":
         school_year = "3º ano do ensino médio";
-        return school_year;
+        break;
 
       default:
         break;
