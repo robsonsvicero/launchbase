@@ -106,6 +106,7 @@ module.exports = {
       callback(results.rows)
     })
   },
+  
   paginate(params){
     const { filter, limit, offset, callback } = params
     let query = "",
